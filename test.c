@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 11:48:33 2017 Mathias
-** Last update Thu Jun 15 16:20:20 2017 Mathias
+** Last update Thu Jun 15 16:27:21 2017 Mathias
 */
 
 #include <stdlib.h>
@@ -269,7 +269,8 @@ void choice(int *tab)
 	printf("no solus\n");
       else if (my_len(str) <= 32)
 	{
-	  printf("solution is %lld\n", my_convert_base(str, tab[B + 1]));
+	  printf("%d lead to %lld in %d iteration(s) in base %d\n",
+		 tab[N + 1], my_convert_base(str, tab[B + 1]), nb, tab[B + 1]);
 	  free(str);
 	}
     }
