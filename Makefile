@@ -5,7 +5,7 @@
 ## Login   <mathias.descoin@epitech.eu@epitech.net>
 ## 
 ## Started on  Thu Jun 15 11:12:35 2017 Mathias
-## Last update Thu Jun 15 19:23:26 2017 Mathias
+## Last update Thu Jun 15 19:26:16 2017 Mathias
 ##
 
 DEBUG	=	no
@@ -13,7 +13,8 @@ DEBUG	=	no
 SRC	=	test.c			\
 		src/find_palin.c	\
 		src/opt.c		\
-		src/utilities.c
+		src/utilities.c		\
+		src/all_palin.c
 
 OBJ	=	$(SRC:.c=.o)
 
