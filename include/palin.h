@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 16:53:56 2017 Mathias
-** Last update Thu Jun 15 17:15:29 2017 Mathias
+** Last update Thu Jun 15 19:02:57 2017 Mathias
 */
 
 #ifndef PALIN_H_
@@ -22,6 +22,9 @@
 # define MIN 6
 # define MAX 8
 # define FAIL -1
+# define HIGH 1
+# define OK 2
+# define LOW -1
 
 int my_len(char *str);
 void inistr(char *str, int max);
@@ -35,7 +38,7 @@ int is_palin(char *str);
 char *find_palin(char *nb, int base, int *min, int max);
 void error(void);
 void option(int av, char **ac);
-long long int my_convert_base(char *str, int base);
+long long int my_base(char *str, int base);
 void initab(int *tab, int max);
 
 #endif /* !PALIN_H_ */

@@ -5,12 +5,12 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 11:48:33 2017 Mathias
-** Last update Thu Jun 15 17:10:15 2017 Mathias
+** Last update Thu Jun 15 19:02:46 2017 Mathias
 */
 
 #include "palin.h"
 
-long long int my_convert_base(char *str, int base)
+long long int my_base(char *str, int base)
 {
   long long int res;
   int i;
