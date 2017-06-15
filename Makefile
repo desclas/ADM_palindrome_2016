@@ -5,16 +5,16 @@
 ## Login   <mathias.descoin@epitech.eu@epitech.net>
 ## 
 ## Started on  Thu Jun 15 11:12:35 2017 Mathias
-## Last update Thu Jun 15 11:48:25 2017 Mathias
+## Last update Thu Jun 15 16:16:12 2017 Mathias
 ##
 
-SRC	=
+SRC	=	test.c
 
 OBJ	=	$(SRC:.c=.o)
 
 NAME	=	palindrome
 
-CFLGS	=	-Iinclude -W -Wall -Werror -Wextra -g3
+CFLGS	=	-Iinclude -W -Wall -Werror -Wextra
 
 all: $(NAME)
 
