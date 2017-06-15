@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 11:48:33 2017 Mathias
-** Last update Thu Jun 15 16:15:24 2017 Mathias
+** Last update Thu Jun 15 16:20:20 2017 Mathias
 */
 
 #include <stdlib.h>
@@ -194,9 +194,9 @@ char *find_palin(char *nb, int base, int *min, int max)
   return (NULL);
 }
 
-int my_convert_base(char *str, int base)
+long long int my_convert_base(char *str, int base)
 {
-  int res;
+  long long int res;
   int i;
   int pw;
 
@@ -269,7 +269,7 @@ void choice(int *tab)
 	printf("no solus\n");
       else if (my_len(str) <= 32)
 	{
-	  printf("solution is %d\n", my_convert_base(str, tab[B + 1]));
+	  printf("solution is %lld\n", my_convert_base(str, tab[B + 1]));
 	  free(str);
 	}
     }
