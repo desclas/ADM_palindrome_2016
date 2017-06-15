@@ -5,7 +5,7 @@
 ## Login   <mathias.descoin@epitech.eu@epitech.net>
 ## 
 ## Started on  Thu Jun 15 11:12:35 2017 Mathias
-## Last update Thu Jun 15 16:16:12 2017 Mathias
+## Last update Thu Jun 15 16:17:42 2017 Mathias
 ##
 
 SRC	=	test.c
@@ -19,7 +19,7 @@ CFLGS	=	-Iinclude -W -Wall -Werror -Wextra
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	gcc -o $@ $^
+	gcc -o $@ $^ -lm
 
 clean:
 	rm -f $(OBJ)
