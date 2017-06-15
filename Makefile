@@ -5,16 +5,25 @@
 ## Login   <mathias.descoin@epitech.eu@epitech.net>
 ## 
 ## Started on  Thu Jun 15 11:12:35 2017 Mathias
-## Last update Thu Jun 15 16:17:42 2017 Mathias
+## Last update Thu Jun 15 17:25:23 2017 Mathias
 ##
 
-SRC	=	test.c
+DEBUG	=	no
+
+SRC	=	test.c			\
+		src/find_palin.c	\
+		src/opt.c		\
+		src/utilities.c
 
 OBJ	=	$(SRC:.c=.o)
 
 NAME	=	palindrome
 
-CFLGS	=	-Iinclude -W -Wall -Werror -Wextra
+ifeq ($(DEBUG), yes)
+	CFLAGS	=	-Iinclude -W -Wall -Werror -Wextra -g3
+else
+	CFLAGS	=	-Iinclude -W -Wall -Werror -Wextra
+endif
 
 all: $(NAME)
 
