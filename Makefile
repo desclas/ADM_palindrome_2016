@@ -5,10 +5,10 @@
 ## Login   <mathias.descoin@epitech.eu@epitech.net>
 ## 
 ## Started on  Thu Jun 15 11:12:35 2017 Mathias
-## Last update Fri Jun 16 10:45:47 2017 Mathias
+## Last update Fri Jun 16 11:14:48 2017 Mathias
 ##
 
-DEBUG	=	yes
+DEBUG	=	yesS
 
 SRC	=	src/main.c		\
 		src/find_palin.c	\
