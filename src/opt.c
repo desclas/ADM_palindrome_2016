@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 17:00:57 2017 Mathias
-** Last update Fri Jun 16 08:54:37 2017 Mathias
+** Last update Fri Jun 16 08:58:27 2017 Mathias
 */
 
 #include "palin.h"
@@ -37,7 +37,8 @@ int check_error_opt(int *tab)
   if (tab[P] > 1 || tab[B] > 1 || tab[N] > 1 || tab[MIN] > 1 || tab[MAX] > 1)
     error();
   if ((tab[N] == 1 && tab[P] == 1) || (tab[MAX + 1] < tab[MIN + 1]) ||
-      !(tab[B + 1] <= 10 && tab[B + 1] > 1))
+      !(tab[B + 1] <= 10 && tab[B + 1] > 1) || tab[MIN + 1] < 0 ||
+      tab[MAX + 1] < 0 || tab[N + 1] < 0 || tab[P + 1] < 0)
     error();
   return (0);
 }
