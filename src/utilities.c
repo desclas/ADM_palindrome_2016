@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 16:56:29 2017 Mathias
-** Last update Thu Jun 15 16:58:00 2017 Mathias
+** Last update Fri Jun 16 13:11:08 2017 Mathias
 */
 
 #include "palin.h"
@@ -35,7 +35,7 @@ int is_int(char *str)
 
   if (my_len(str) > 10)
     return (1);
-  else if (my_len(str) == 10 && !(str[0] <= '2' && str[1] == 0))
+  else if (my_len(str) == 10 && !(str[0] < '2' || str[1] == 0))
     return (1);
   i = 1;
   while (str[i] != '\0')
