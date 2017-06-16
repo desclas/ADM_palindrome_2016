@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 17:00:57 2017 Mathias
-** Last update Fri Jun 16 09:11:54 2017 Mathias
+** Last update Fri Jun 16 10:48:12 2017 Mathias
 */
 
 #include "palin.h"
@@ -62,7 +62,8 @@ void choice(int *tab)
 	}
     }
   else if (tab[P] == 1)
-    all_palin(my_int_to_str_base(tab[P + 1], tab[B + 1]), tab[B + 1], tab[MIN + 1], tab[MAX + 1]);
+    all_palin(my_int_to_str_base(tab[P + 1], tab[B + 1]),
+	      tab[B + 1], tab[MIN + 1], tab[MAX + 1]);
 }
 
 void option(int av, char **ac)

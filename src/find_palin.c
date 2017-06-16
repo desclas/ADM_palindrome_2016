@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 16:58:34 2017 Mathias
-** Last update Thu Jun 15 17:00:11 2017 Mathias
+** Last update Fri Jun 16 10:50:42 2017 Mathias
 */
 
 #include "palin.h"
@@ -36,8 +36,10 @@ char *my_int_to_str_base(int nb, int base)
 {
   char *str;
 
-  str = malloc(sizeof(char));
-  str[0] = '\0';
+  str = malloc(sizeof(char) * 2);
+  inistr(str, 2);
+  if (nb == 0)
+    str[0] = '0';
   while (nb != 0)
     {
       str = append_char(str, (nb % base) + 48);
