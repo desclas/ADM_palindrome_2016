@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 17:00:57 2017 Mathias
-** Last update Thu Jun 15 19:25:37 2017 Mathias
+** Last update Fri Jun 16 08:54:37 2017 Mathias
 */
 
 #include "palin.h"
@@ -52,10 +52,10 @@ void choice(int *tab)
     {
       if ((str = find_palin(my_int_to_str_base(tab[N + 1], tab[B + 1]),
 			    tab[B + 1], &nb, tab[MAX + 1])) == NULL)
-	printf("no solus\n");
+	printf("no solution\n");
       else if (my_len(str) <= 32)
 	{
-	  printf("%d lead to %lld in %d iteration(s) in base %d\n",
+	  printf("%d leads to %lld in %d iteration(s) in base %d\n",
 		 tab[N + 1], my_base(str, tab[B + 1]), nb, tab[B + 1]);
 	  free(str);
 	}

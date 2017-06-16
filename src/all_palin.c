@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 19:24:33 2017 Mathias
-** Last update Thu Jun 15 19:26:37 2017 Mathias
+** Last update Fri Jun 16 08:53:13 2017 Mathias
 */
 
 #include "palin.h"
@@ -93,13 +93,13 @@ void all_palin(char *nb, int base, int min, int max)
     error();
   str = ini_all_palin(tab, &check, min, max);
    if (nb[0] == '1' && my_len(nb) == 1)
-    printf("%s, lead to %s in %d iteration(s) in base %d\n", nb, nb,
+    printf("%s, leads to %s in %d iteration(s) in base %d\n", nb, nb,
 	   tab[0], base);
   while (check_nb(nb, str) != HIGH)
     {
       tmp = have_palin(revstr(revstr_nofree(str)), nb, base, tab);
       if (check_nb(nb, tmp) == OK && (check = 1) == 1)
-	printf("%lld, lead to %lld in %d iteration(s) in base %d\n",
+	printf("%lld, leads to %lld in %d iteration(s) in base %d\n",
 	       my_base(str, base), my_base(nb, base), tab[0], base);
       str = add_one(revstr(str), base);
       tab[0] = min;
