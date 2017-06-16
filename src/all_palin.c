@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 19:24:33 2017 Mathias
-** Last update Fri Jun 16 08:53:13 2017 Mathias
+** Last update Fri Jun 16 09:16:30 2017 Mathias
 */
 
 #include "palin.h"
@@ -106,7 +106,7 @@ void all_palin(char *nb, int base, int min, int max)
       free(tmp);
     }
   if (check == 0)
-    printf("no solution\n");
+    error_all_palin(str, nb);
   free(str);
   free(nb);
 }

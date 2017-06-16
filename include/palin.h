@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 16:53:56 2017 Mathias
-** Last update Thu Jun 15 19:25:34 2017 Mathias
+** Last update Fri Jun 16 09:16:21 2017 Mathias
 */
 
 #ifndef PALIN_H_
@@ -41,5 +41,6 @@ void option(int av, char **ac);
 long long int my_base(char *str, int base);
 void initab(int *tab, int max);
 void all_palin(char *nb, int base, int min, int max);
+void error_all_palin(char *str, char *nb);
 
 #endif /* !PALIN_H_ */
