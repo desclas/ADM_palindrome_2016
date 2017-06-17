@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 11:48:33 2017 Mathias
-** Last update Fri Jun 16 09:16:25 2017 Mathias
+** Last update Sat Jun 17 09:49:36 2017 Mathias
 */
 
 #include "palin.h"
@@ -15,7 +15,7 @@ void error_all_palin(char *str, char *nb)
   free(str);
   free(nb);
   printf("no solution\n");
-  exit(84);
+  exit(0);
 }
 
 long long int my_base(char *str, int base)
