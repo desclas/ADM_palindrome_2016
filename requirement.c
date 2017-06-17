@@ -5,7 +5,7 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 09:16:28 2017 Mathias
-** Last update Sat Jun 17 10:22:50 2017 Mathias
+** Last update Sat Jun 17 14:38:29 2017 Mathias
 */
 
 #include <stdlib.h>
@@ -24,7 +24,7 @@ int my_squareroot_synthesis(int nb)
   i = 0;
   if (nb == 0)
     return (0);
-  if (nb < 0 || nb == 1)
+  if (nb < 0)
     return (-1);
   while (++i * i < nb);
   if (i * i == nb)
