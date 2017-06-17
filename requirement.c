@@ -5,15 +5,16 @@
 ** Login   <mathias.descoin@epitech.eu@epitech.net>
 ** 
 ** Started on  Thu Jun 15 09:16:28 2017 Mathias
-** Last update Fri Jun 16 14:28:38 2017 Mathias
+** Last update Sat Jun 17 10:22:50 2017 Mathias
 */
 
 #include <stdlib.h>
 
 int my_factrec_synthesis(int nb)
 {
-  return (nb * (nb < 0 ? 0 : (nb == 1 || nb == 0 ? 1 :
-			      my_factrec_synthesis(nb - 1))));
+  return ((nb == 0 ? 1 : nb) * (nb < 0 || nb > 12 ? 0 :
+				(nb == 1 || nb == 0 ? 1 :
+				 my_factrec_synthesis(nb - 1))));
 }
 
 int my_squareroot_synthesis(int nb)
@@ -23,7 +24,7 @@ int my_squareroot_synthesis(int nb)
   i = 0;
   if (nb == 0)
     return (0);
-  if (nb < 0)
+  if (nb < 0 || nb == 1)
     return (-1);
   while (++i * i < nb);
   if (i * i == nb)
